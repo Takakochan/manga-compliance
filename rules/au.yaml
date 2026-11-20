@@ -1,0 +1,20 @@
+# DRAFT: Australia. Check every rule against the source text in corpus/ before relying on it.
+# outcome: ok < review < age_restricted < edit_required < blocked
+
+- id: AU-VIOLENCE-01
+  country: AU
+  category: violence
+  min_severity: strong
+  outcome: age_restricted
+  label: Detailed violence, likely Category 1 Restricted
+  doc: AU/classification_publications_2005.md
+  query: Category 1 restricted violence detailed impact
+
+- id: AU-DRUGS-01
+  country: AU
+  category: drugs
+  min_severity: strong
+  outcome: review
+  label: Drug use shown in detail, check classification guidelines
+  doc: AU/classification_publications_2005.md
+  query: drug use detailed realistic

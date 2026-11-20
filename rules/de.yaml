@@ -1,0 +1,29 @@
+# DRAFT: Germany. Check every rule against the source text in corpus/ before relying on it.
+# outcome: ok < review < age_restricted < edit_required < blocked
+
+- id: DE-SYMBOL-01
+  country: DE
+  category: prohibited_symbol
+  min_severity: moderate
+  outcome: blocked
+  label: Symbol of an unconstitutional organisation (e.g. swastika)
+  doc: DE/stgb_86a.md
+  query: Kennzeichen verfassungswidriger Organisationen verwenden
+
+- id: DE-SYMBOL-02
+  country: DE
+  category: prohibited_symbol
+  min_severity: mild
+  outcome: review
+  label: Symbol that could be confused with a banned one (e.g. Buddhist manji)
+  doc: DE/stgb_86a.md
+  query: Kennzeichen zum Verwechseln aehnlich
+
+- id: DE-VIOLENCE-01
+  country: DE
+  category: violence
+  min_severity: strong
+  outcome: age_restricted
+  label: Graphic violence, likely 16+ or 18+
+  doc: DE/usk_leitkriterien.md
+  query: Gewaltdarstellung drastisch detailliert
