@@ -60,7 +60,7 @@ Built with Claude Code as the coding agent, in a private working repository:
 
 - I wrote the module boundaries and data types first (`docs/INTERFACES.md`); the agent implemented inside them.
 - One task = one branch = one pull request, each with *Known limits*, a *Test plan* and evidence from a real run. I reviewed and merged.
-- Claims are tested on real pages before they go into the docs. Example: an early draft said the tool detects the Buddhist manji; a test page with a small manji on an armband showed it does not, so the claim was withdrawn and page tiling was planned instead.
+- Claims are tested on real pages before they go into the docs. Example: an early draft said the tool detects the Buddhist manji. It did on a cover where the symbol is large, but a test page with a small manji on an armband showed it misses small ones, so the claim was narrowed and page tiling was planned.
 - This public repository is an export of the reviewed code (`LICENSE`: all rights reserved).
 
 ## Data
